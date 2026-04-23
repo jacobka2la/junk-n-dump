@@ -77,9 +77,9 @@ const Services = () => {
       <section className="section-padding bg-muted">
         <div className="section-container text-center max-w-3xl">
           <AnimatedSection>
-            <h2 className="heading-section mb-6">Need Junk Gone Fast?</h2>
+            <h2 className="heading-section mb-6">We’ll Handle What You Need Gone</h2>
             <p className="text-body-lg mb-8">
-              Send over a few details, attach a photo if you want, and we will get back to you with a free estimate. Same-day service is available when scheduling allows.
+              If it’s taking up space, we can take care of it. Reach out with a quick description or photo, and we’ll let you know how fast we can get it gone.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Get a Free Quote
