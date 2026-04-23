@@ -6,33 +6,33 @@ import bgProcess from "@/assets/bg-process.jpg";
 const steps = [
   {
     number: "01",
-    title: "Reach out however you want",
+    title: "Reach Out However You Want",
     description:
       "Call, text, or submit the quote form online. Whatever is easiest for you works. If you already know what needs to go, send over the details and we can start pricing the job right away.",
   },
   {
     number: "02",
-    title: "Send photos for a faster estimate",
+    title: "Send Photos For a Faster Estimate",
     description:
       "Photos are optional, but they help a lot. If you attach a picture of the junk, we can better understand the load size, the type of material, and how big the cleanup will be before scheduling.",
   },
   {
     number: "03",
-    title: "Get your free estimate",
+    title: "Get Your Free Estimate",
     description:
       "Once we have the details, we send back a straightforward estimate based on the amount of junk, the labor involved, and the type of material being hauled to the transfer station.",
   },
   {
     number: "04",
-    title: "Schedule the pickup",
+    title: "Schedule The Pickup",
     description:
       "Pick the time that works best for you. Same-day service is available when our schedule allows, and we keep communication simple so you know what to expect.",
   },
   {
     number: "05",
-    title: "We load it, haul it, and dump it",
+    title: "We Load It, Haul It, and Dump It",
     description:
-      "Once we arrive, we load up the junk, haul it away in our 6x12 trailer with 4-foot walls, and dispose of the load at a transfer station so your space is left clear and handled.",
+      "Once we arrive, we load up the junk, haul it away, and dispose of the load at a transfer station so your space is left clear and handled.",
   },
 ];
 
