@@ -7,32 +7,32 @@ import bgWhy from "@/assets/bg-why.jpg";
 const strengths = [
   {
     icon: MessageSquare,
-    title: "Easy communication",
+    title: "Easy Communication",
     description: "You can call, text, or use the quote form online. We keep communication simple so you can reach us the way that makes the most sense for you.",
   },
   {
     icon: Clock3,
-    title: "Fast turnaround",
+    title: "Fast Turnaround",
     description: "We know most people want junk gone as soon as possible. That is why free estimates are quick and same-day service is available when scheduling opens up.",
   },
   {
     icon: FileText,
-    title: "Straightforward pricing",
+    title: "Straightforward Pricing",
     description: "No one wants a confusing process. We keep quotes simple and based on the size of the load, the type of junk, and the work needed to remove it.",
   },
   {
     icon: MapPinned,
-    title: "Focused local coverage",
+    title: "Focused Local Coverage",
     description: "By concentrating on Oakland County and Macomb County, we can stay responsive and serve the areas we actually know well.",
   },
   {
     icon: CheckCircle,
-    title: "Built for real cleanouts",
+    title: "Built For Real Cleanouts",
     description: "Our 6x12 trailer with 4-foot walls gives us a practical setup for furniture, general junk, garage cleanouts, and many smaller debris jobs.",
   },
   {
     icon: GraduationCap,
-    title: "Student-owned hustle",
+    title: "Student-Owned Hustle",
     description: "Junk N Dump is local and student-owned, which means customers are supporting a young business that is trying to earn repeat work the right way.",
   },
 ];
