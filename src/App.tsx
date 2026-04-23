@@ -5,10 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
-import Services from "./pages/WhatWeOffer";
-import Process from "./pages/LendingProcess";
+import Services from "./pages/Services";
+import HowItWorks from "./pages/HowItWorks";
 import WhyChooseUs from "./pages/WhyChooseUs";
-import GetQuote from "./pages/LoanRequest";
+import GetAQuote from "./pages/GetAQuote";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,9 +23,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/how-it-works" element={<Process />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/why-choose-us" element={<WhyChooseUs />} />
-          <Route path="/get-a-quote" element={<GetQuote />} />
+          <Route path="/get-a-quote" element={<GetAQuote />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

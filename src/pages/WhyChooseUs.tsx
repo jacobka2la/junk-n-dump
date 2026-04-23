@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { MessageSquare, Clock3, FileText, MapPinned, CheckCircle, GraduationCap } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
-import bgWhy from "@/assets/bg-why.jpg";
+import whyChooseUsImage from "@/assets/junk-cleanout-why-choose-us.jpg";
 
 const strengths = [
   {
@@ -28,7 +28,7 @@ const strengths = [
   {
     icon: CheckCircle,
     title: "Built For Real Cleanouts",
-    description: "Our 6x12 trailer with 4-foot walls gives us a practical setup for furniture, general junk, garage cleanouts, and many smaller debris jobs.",
+    description: "We are set up for furniture, general junk, garage cleanouts, and the everyday removal jobs people need handled quickly.",
   },
   {
     icon: GraduationCap,
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
     <PageLayout>
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={bgWhy} alt="" className="w-full h-full object-cover" />
+          <img src={whyChooseUsImage} alt="Large residential junk cleanout" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background" />
         </div>
         <div className="relative section-container text-center max-w-3xl">

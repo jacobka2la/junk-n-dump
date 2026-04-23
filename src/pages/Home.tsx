@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Truck, Clock3, Camera, MapPinned, ShieldCheck, Recycle, House, Wrench } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
-import cityBg from "@/assets/city-bg.jpg";
+import heroImage from "@/assets/junk-removal-hero.jpg";
 import patternBg from "@/assets/pattern-bg.jpg";
 
 const coreValues = [
@@ -17,7 +17,7 @@ const credibilityItems = [
   { icon: House, title: "Homes & Garages" },
   { icon: Wrench, title: "Debris Hauling" },
   { icon: ShieldCheck, title: "Student-Owned" },
-  { icon: Recycle, title: "Transfer Station Disposal" },
+  { icon: Recycle, title: "Responsible Disposal" },
 ];
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
     <PageLayout>
       <section className="relative overflow-hidden min-h-[85vh] flex items-center">
         <div className="absolute inset-0">
-          <img src={cityBg} alt="" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Junk removal crew loading furniture into a truck" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/70 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/65 to-background" />
         </div>
@@ -76,7 +76,8 @@ const Home = () => {
 
           <AnimatedSection delay={0.15}>
             <p className="text-body mb-6">
-We serve Oakland and Macomb County with fast, reliable junk removal. From pickup to proper disposal, we take care of the entire process so you can enjoy a clean, stress-free space.            </p>
+              We serve Oakland and Macomb County with fast, reliable junk removal. From pickup to proper disposal, we take care of the entire process so you can enjoy a clean, stress-free space.
+            </p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>

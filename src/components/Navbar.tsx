@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import placeholder from "@/assets/junk-placeholder.png";
+import placeholder from "@/assets/junk-n-dump-logo-placeholder.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -31,9 +31,7 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 text-center ${
-                  isActive
-                    ? "text-primary bg-primary-light"
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  isActive ? "text-primary bg-primary-light" : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 }`}
               >
                 {item.label}
@@ -63,9 +61,7 @@ const Navbar = () => {
                   key={item.path}
                   to={item.path}
                   className={`whitespace-nowrap px-3 py-1.5 text-sm font-medium rounded-lg transition-colors duration-200 ${
-                    isActive
-                      ? "text-primary bg-primary-light"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    isActive ? "text-primary bg-primary-light" : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
                 >
                   {item.label}

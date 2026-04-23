@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Home, Sofa, Refrigerator, Hammer, Trees, Trash2 } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
-import bgOffer from "@/assets/bg-offer.jpg";
+import servicesImage from "@/assets/junk-removal-services.jpeg";
 
 const offerings = [
   {
@@ -23,7 +23,7 @@ const offerings = [
   {
     icon: Hammer,
     title: "Construction and Renovation Debris",
-    description: "We can handle smaller loads of debris such as wood, drywall, trim, flooring, cabinets, and leftover material from home improvement work that fits our hauling setup.",
+    description: "We can handle smaller loads of debris such as wood, drywall, trim, flooring, cabinets, and leftover material from home improvement work.",
   },
   {
     icon: Trees,
@@ -32,8 +32,8 @@ const offerings = [
   },
   {
     icon: Trash2,
-    title: "General Trailer-Load Hauling",
-    description: "Our 6x12 trailer with 4-foot walls gives us a solid setup for residential junk removal and flexible load sizes across many different types of jobs.",
+    title: "General Junk Removal",
+    description: "If it is taking up space, there is a good chance we can remove it. We handle a wide range of residential junk hauling jobs with straightforward service and clear communication.",
   },
 ];
 
@@ -42,7 +42,7 @@ const Services = () => {
     <PageLayout>
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={bgOffer} alt="" className="w-full h-full object-cover" />
+          <img src={servicesImage} alt="Trailer loaded with junk for removal" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background" />
         </div>
         <div className="relative section-container text-center max-w-3xl">
@@ -50,7 +50,7 @@ const Services = () => {
             <span className="badge-accent mb-4 inline-block">Our Services</span>
             <h1 className="heading-display mb-6">What We Remove</h1>
             <p className="text-body-lg">
-              Junk N Dump handles a wide range of residential junk removal jobs across Oakland County and Macomb County. If it can be loaded into our hauling setup, there is a good chance we can clear it out.
+              Junk N Dump handles a wide range of residential junk removal jobs across Oakland County and Macomb County. If it can be loaded safely and hauled away, there is a good chance we can clear it out.
             </p>
           </AnimatedSection>
         </div>
@@ -79,7 +79,7 @@ const Services = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">We’ll Handle What You Need Gone</h2>
             <p className="text-body-lg mb-8">
-              If it’s taking up space, we can take care of it. Reach out with a quick description or photo, and we’ll let you know how fast we can get it gone.
+              If it is taking up space, we can take care of it. Reach out with a quick description or photo, and we will let you know how fast we can get it gone.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Get a Free Quote
