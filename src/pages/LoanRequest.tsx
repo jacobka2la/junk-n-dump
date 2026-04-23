@@ -142,7 +142,7 @@ const GetQuote = () => {
               </button>
 
               <p className="text-xs text-muted-foreground text-center">
-                Placeholder phone, email, and Formspree endpoint are currently being used and can be swapped with your real business info later.
+                Hi dom, we are gna put a working link here soon dw.
               </p>
             </form>
           </AnimatedSection>
