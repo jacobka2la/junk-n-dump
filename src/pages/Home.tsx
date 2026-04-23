@@ -36,7 +36,7 @@ const Home = () => {
               Junk Removal That Is Fast, Straightforward, and Built for Real Cleanouts
             </h1>
             <p className="text-body-lg max-w-3xl mx-auto mb-10">
-              Junk N Dump helps homeowners, renters, landlords, and small contractors clear out unwanted junk across Oakland County and Macomb County. We haul with a 6x12 trailer with 4-foot walls, offer free estimates, and make it easy to send photos so you can get a quote faster.
+              Junk N Dump helps homeowners, renters, landlords, and small contractors clear out unwanted junk across Oakland and Macomb County. We offer free estimates and make it easy to send photos so you can get a quote faster.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link to="/services" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
@@ -76,8 +76,7 @@ const Home = () => {
 
           <AnimatedSection delay={0.15}>
             <p className="text-body mb-6">
-              We serve customers throughout Oakland County and Macomb County using a 6x12 trailer with 4-foot walls, which gives us the flexibility to handle a wide range of residential pickups and cleanouts. We also dispose of loads at a transfer station, so the process stays efficient from pickup to final dump.
-            </p>
+We serve Oakland and Macomb County with fast, reliable junk removal. From pickup to proper disposal, we take care of the entire process so you can enjoy a clean, stress-free space.            </p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
