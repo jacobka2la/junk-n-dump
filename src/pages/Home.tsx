@@ -7,17 +7,17 @@ import cityBg from "@/assets/city-bg.jpg";
 import patternBg from "@/assets/pattern-bg.jpg";
 
 const coreValues = [
-  { icon: Truck, title: "Reliable hauling", description: "We show up ready to load, haul, and clear out junk without wasting your whole day." },
-  { icon: Clock3, title: "Fast response", description: "Same-day availability and quick communication help you get the junk gone when you need it gone." },
-  { icon: Camera, title: "Easy estimates", description: "Customers can send photos with their quote request to make pricing faster and more accurate." },
-  { icon: MapPinned, title: "Local service", description: "We focus on Oakland County and Macomb County so you are working with a crew that actually knows the area." },
+  { icon: Truck, title: "Reliable Hauling", description: "We show up ready to load, haul, and clear out junk without wasting your whole day." },
+  { icon: Clock3, title: "Fast Response", description: "Same-day availability and quick communication help you get the junk gone when you need it gone." },
+  { icon: Camera, title: "Easy Estimates", description: "Customers can send photos with their quote request to make pricing faster and more accurate." },
+  { icon: MapPinned, title: "Local Service", description: "We focus on Oakland and Macomb County, so you are working with a crew that actually knows the area." },
 ];
 
 const credibilityItems = [
-  { icon: House, title: "Homes & garages" },
-  { icon: Wrench, title: "Light debris hauling" },
-  { icon: ShieldCheck, title: "Student-owned" },
-  { icon: Recycle, title: "Transfer station disposal" },
+  { icon: House, title: "Homes & Garages" },
+  { icon: Wrench, title: "Debris Hauling" },
+  { icon: ShieldCheck, title: "Student-Owned" },
+  { icon: Recycle, title: "Transfer Station Disposal" },
 ];
 
 const Home = () => {
