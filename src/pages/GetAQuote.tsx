@@ -129,9 +129,18 @@ const GetAQuote = () => {
               </div>
 
               <div>
-                <label htmlFor="jobDetails" className={labelClasses}>Job Details *</label>
-                <textarea id="jobDetails" name="jobDetails" required maxLength={1200} rows={5} className={inputClasses} placeholder="Tell us what you have, where it is located, and anything else we should know before the pickup." />
-              </div>
+  <label htmlFor="jobDetails" className={labelClasses}>
+    Additional Notes
+  </label>
+  <textarea
+    id="jobDetails"
+    name="jobDetails"
+    maxLength={1200}
+    rows={5}
+    className={inputClasses}
+    placeholder="Anything else we should know (optional)"
+  />
+</div>
 
               <div>
                 <label htmlFor="photo" className={labelClasses}>Upload a photo (optional)</label>
