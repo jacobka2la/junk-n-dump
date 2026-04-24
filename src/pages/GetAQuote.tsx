@@ -99,7 +99,7 @@ const GetAQuote = () => {
                   <option value="Furniture Removal">Furniture Removal</option>
                   <option value="Appliance Removal">Appliance Removal</option>
                   <option value="Yard Waste">Yard Waste</option>
-                  <option value="Light Construction Debris">Light Construction Debris</option>
+                  <option value="Construction Debris">Construction Debris</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
