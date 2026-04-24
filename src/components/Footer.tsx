@@ -33,7 +33,7 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-lg mb-4">Contact</h4>
             <div className="space-y-2 text-sm opacity-75 leading-relaxed">
               <p>(248) 387-9026</p>
-              <p>hello@junkndumpmi.com</p>
+              <p>junkndumpmi@gmail.com</p>
               <p>Oakland County & Macomb County</p>
               <p>Free estimates and same-day service available</p>
             </div>
