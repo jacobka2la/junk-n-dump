@@ -135,7 +135,13 @@ const GetAQuote = () => {
 
               <div>
                 <label htmlFor="photo" className={labelClasses}>Upload a photo (optional)</label>
-                <input type="file" id="photo" name="photo" accept="image/*" className={inputClasses + " file:mr-4 file:rounded-md file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-semibold file:text-primary-foreground hover:file:bg-primary-dark"} />
+                <input
+  type="file"
+  id="photo"
+  name="photo"
+  accept="image/*"
+  className={inputClasses}
+/>
               </div>
 
               <button type="submit" disabled={isSubmitting} className="w-full py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark disabled:opacity-60 transition-colors duration-200 shadow-lg">
