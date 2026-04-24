@@ -48,7 +48,11 @@ const Navbar = () => {
       <div className="md:hidden">
         <div className="flex items-center justify-center h-16 px-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={placeholder} alt="Junk N Dump logo placeholder" className="w-10 h-10 rounded-md object-cover border border-white/10" />
+            <img
+  src={placeholder}
+  alt="Junk N Dump"
+  className="h-8 w-auto max-w-[105px] object-contain"
+/>
             <div className="leading-none">
               <span className="block text-base font-bold font-body text-foreground tracking-[0.15em] uppercase">Junk N Dump</span>
               <span className="block text-[10px] text-muted-foreground uppercase tracking-[0.2em] mt-1">Junk Removal</span>
