@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 text-center">
-          <p className="text-sm opacity-40">© {new Date().getFullYear()} Junk N Dump. All rights reserved.</p>
+          <p className="text-sm opacity-40">© {new Date().getFullYear()} Junk N Dump MI. All rights reserved.</p>
         </div>
       </div>
     </footer>
