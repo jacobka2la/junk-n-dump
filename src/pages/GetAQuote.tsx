@@ -17,7 +17,7 @@ const GetAQuote = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formspree.io/f/xkgzebrb", {
+      const response = await fetch("https://formspree.io/f/xgorrboy", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
