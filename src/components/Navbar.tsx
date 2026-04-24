@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
       <div className="hidden md:flex section-container items-center h-20">
         <Link to="/" className="flex items-center gap-3 mr-8">
-          <img src={placeholder} alt="Junk N Dump" className="h-10 w-auto" />
+          <img src={placeholder} alt="Junk N Dump" className="h-14 w-auto object-contain" />
           <div className="text-left leading-none">
             <span className="block text-lg font-bold font-body text-foreground tracking-[0.2em] uppercase">Junk N Dump</span>
             <span className="block text-xs text-muted-foreground uppercase tracking-[0.25em] mt-1">Junk Removal</span>
