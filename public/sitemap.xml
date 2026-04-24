@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://junkndump.vercel.app/</loc>
+    <loc>https://junkndumpmi.com/</loc>
   </url>
+
   <url>
-    <loc>https://junkndump.vercel.app/services</loc>
+    <loc>https://junkndumpmi.com/services</loc>
   </url>
+
   <url>
-    <loc>https://junkndump.vercel.app/how-it-works</loc>
+    <loc>https://junkndumpmi.com/how-it-works</loc>
   </url>
+
   <url>
-    <loc>https://junkndump.vercel.app/why-choose-us</loc>
+    <loc>https://junkndumpmi.com/why-choose-us</loc>
   </url>
+
   <url>
-    <loc>https://junkndump.vercel.app/get-a-quote</loc>
+    <loc>https://junkndumpmi.com/get-a-quote</loc>
   </url>
+
 </urlset>
