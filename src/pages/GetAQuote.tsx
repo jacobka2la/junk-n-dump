@@ -20,18 +20,19 @@ const GetAQuote = () => {
       const response = await fetch("https://formspree.io/f/xgorrboy", {
         method: "POST",
         body: formData,
-        headers: { Accept: "application/json" },
-        
+        headers: {
+          Accept: "application/json",
+        },
       });
 
       if (response.ok) {
-        toast.success("Your quote request has been submitted. We will get back to you as soon as possible.");
+        toast.success("Your request has been sent. We’ll reach out shortly.");
         form.reset();
       } else {
-        toast.error("There was an issue submitting your request. Please try again.");
+        toast.error("Something went wrong. Please try again.");
       }
     } catch {
-      toast.error("A network error occurred. Please check your connection and try again.");
+      toast.error("Network error. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -39,126 +40,206 @@ const GetAQuote = () => {
 
   const inputClasses =
     "w-full px-4 py-3 text-base font-body bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all duration-200";
-  const labelClasses = "block text-sm font-semibold font-body text-foreground mb-2";
+
+  const labelClasses =
+    "block text-sm font-semibold font-body text-foreground mb-2";
 
   return (
     <PageLayout>
+      {/* HERO */}
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0">
-          <img src={quoteBanner} alt="Get a quote for junk removal" className="w-full h-full object-cover" />
+          <img
+            src={quoteBanner}
+            alt="Get a junk removal quote"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/85 to-background" />
         </div>
+
         <div className="relative section-container text-center max-w-3xl">
           <AnimatedSection>
-            <span className="badge-accent mb-4 inline-block">Free Estimates</span>
+            <span className="badge-accent mb-4 inline-block">
+              Free Estimates
+            </span>
             <h1 className="heading-display mb-6">Get a Quote</h1>
             <p className="text-body-lg">
-              Fill out the form below and tell us what needs to be removed. You can upload a photo if you want to help us price the job faster, but it is not required.
+              Fill out the form below and tell us what needs to be removed.
+              We’ll reach out as soon as possible with a free estimate.
             </p>
           </AnimatedSection>
         </div>
       </section>
 
+      {/* FORM */}
       <section className="section-padding bg-background">
         <div className="section-container max-w-2xl">
           <AnimatedSection>
-            <form onSubmit={handleSubmit} className="card-elevated space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="card-elevated space-y-6"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Junk Removal Quote Request"
+              />
+
+              {/* NAME + EMAIL */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className={labelClasses}>Full Name *</label>
-                  <input type="text" id="name" name="name" required maxLength={100} className={inputClasses} placeholder="John Doe" />
+                  <label htmlFor="name" className={labelClasses}>
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    maxLength={100}
+                    className={inputClasses}
+                    placeholder="John Doe"
+                  />
                 </div>
+
                 <div>
-                  <label htmlFor="email" className={labelClasses}>Email Address</label>
-                  <input type="email" id="email" name="email" maxLength={255} className={inputClasses} placeholder="john@example.com" />
+                  <label htmlFor="email" className={labelClasses}>
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    maxLength={255}
+                    className={inputClasses}
+                    placeholder="john@example.com"
+                  />
                 </div>
               </div>
 
+              {/* PHONE + CITY */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="phone" className={labelClasses}>Phone Number *</label>
-                  <input type="tel" id="phone" name="phone" required maxLength={20} className={inputClasses} placeholder="(555) 123-4567" />
+                  <label htmlFor="phone" className={labelClasses}>
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    maxLength={20}
+                    className={inputClasses}
+                    placeholder="(555) 123-4567"
+                  />
                 </div>
+
                 <div>
-                  <label htmlFor="city" className={labelClasses}>City / Area *</label>
-                  <input type="text" id="city" name="city" required maxLength={120} className={inputClasses} placeholder="Rochester, Sterling Heights, Troy..." />
+                  <label htmlFor="city" className={labelClasses}>
+                    City / Area *
+                  </label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    required
+                    maxLength={120}
+                    className={inputClasses}
+                    placeholder="Rochester, Troy, Sterling Heights..."
+                  />
                 </div>
               </div>
 
+              {/* ADDRESS */}
               <div>
-                <label htmlFor="address" className={labelClasses}>Pickup Address</label>
-                <input type="text" id="address" name="address" maxLength={300} className={inputClasses} placeholder="123 Main Street, City, State, ZIP" />
+                <label htmlFor="address" className={labelClasses}>
+                  Pickup Address
+                </label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  maxLength={300}
+                  className={inputClasses}
+                  placeholder="123 Main Street"
+                />
               </div>
 
+              {/* JOB TYPE */}
               <div>
-                <label htmlFor="junkType" className={labelClasses}>What needs to be removed? *</label>
-                <select id="junkType" name="junkType" required className={inputClasses}>
+                <label htmlFor="junkType" className={labelClasses}>
+                  What needs to be removed? *
+                </label>
+                <select
+                  id="junkType"
+                  name="junkType"
+                  required
+                  className={inputClasses}
+                >
                   <option value="">Select a job type</option>
-                  <option value="General Junk Removal">General Junk Removal</option>
+                  <option value="General Junk Removal">
+                    General Junk Removal
+                  </option>
                   <option value="Garage Cleanout">Garage Cleanout</option>
                   <option value="House Cleanout">House Cleanout</option>
-                  <option value="Furniture Removal">Furniture Removal</option>
-                  <option value="Appliance Removal">Appliance Removal</option>
+                  <option value="Furniture Removal">
+                    Furniture Removal
+                  </option>
+                  <option value="Appliance Removal">
+                    Appliance Removal
+                  </option>
                   <option value="Yard Waste">Yard Waste</option>
-                  <option value="Construction Debris">Construction Debris</option>
+                  <option value="Construction Debris">
+                    Construction Debris
+                  </option>
                   <option value="Other">Other</option>
                 </select>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="timeline" className={labelClasses}>When do you want it gone?</label>
-                  <select id="timeline" name="timeline" className={inputClasses}>
-                    <option value="">Select timing</option>
-                    <option value="Same Day">Same Day</option>
-                    <option value="Next Day">Next Day</option>
-                    <option value="This Week">This Week</option>
-                    <option value="Flexible">Flexible</option>
-                  </select>
-                </div>
-                <div>
-                  <label htmlFor="contactPreference" className={labelClasses}>Preferred contact method</label>
-                  <select id="contactPreference" name="contactPreference" className={inputClasses}>
-                    <option value="">Select one</option>
-                    <option value="Call">Call</option>
-                    <option value="Text">Text</option>
-                    <option value="Email">Email</option>
-                    <option value="Any">Any of them</option>
-                  </select>
-                </div>
+              {/* TIMELINE */}
+              <div>
+                <label htmlFor="timeline" className={labelClasses}>
+                  When do you want it gone?
+                </label>
+                <select
+                  id="timeline"
+                  name="timeline"
+                  className={inputClasses}
+                >
+                  <option value="">Select timing</option>
+                  <option value="Same Day">Same Day</option>
+                  <option value="Next Day">Next Day</option>
+                  <option value="This Week">This Week</option>
+                  <option value="Flexible">Flexible</option>
+                </select>
               </div>
 
+              {/* NOTES */}
               <div>
-  <label htmlFor="jobDetails" className={labelClasses}>
-    Additional Notes
-  </label>
-  <textarea
-    id="jobDetails"
-    name="jobDetails"
-    maxLength={1200}
-    rows={5}
-    className={inputClasses}
-    placeholder="Anything else we should know (optional)"
-  />
-</div>
-
-              <div>
-                <label htmlFor="photo" className={labelClasses}>Upload a photo (optional)</label>
-                <input
-  type="file"
-  id="photo"
-  name="photo"
-  accept="image/*"
-  className={inputClasses}
-/>
+                <label htmlFor="jobDetails" className={labelClasses}>
+                  Additional Notes
+                </label>
+                <textarea
+                  id="jobDetails"
+                  name="jobDetails"
+                  maxLength={1200}
+                  rows={5}
+                  className={inputClasses}
+                  placeholder="Anything else we should know (optional)"
+                />
               </div>
 
-              <button type="submit" disabled={isSubmitting} className="w-full py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark disabled:opacity-60 transition-colors duration-200 shadow-lg">
+              {/* SUBMIT */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark disabled:opacity-60 transition-colors duration-200 shadow-lg"
+              >
                 {isSubmitting ? "Submitting..." : "Request Free Quote"}
               </button>
 
               <p className="text-xs text-muted-foreground text-center">
-                We will reach back out as soon as possible after you send your request.
+                We’ll get back to you as soon as possible.
               </p>
             </form>
           </AnimatedSection>
