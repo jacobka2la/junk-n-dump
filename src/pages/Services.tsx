@@ -79,7 +79,7 @@ const Services = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">We’ll Handle What You Need Gone</h2>
             <p className="text-body-lg mb-8">
-              If it is taking up space, we can take care of it. Reach out with a quick description or photo, and we will let you know how fast we can get it gone.
+              If it is taking up space, we can take care of it. Reach out with a quick description, and we will let you know how fast we can get it gone.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Get a Free Quote
