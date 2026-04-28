@@ -12,9 +12,9 @@ const steps = [
   },
   {
     number: "02",
-    title: "Send Photos For a Faster Estimate",
+    title: "Tell Us What You Need Removed",
     description:
-      "Photos are optional, but they help a lot. If you attach a picture of the junk, we can better understand the load size, type of material, and scope of the cleanup before scheduling.",
+      "Give us a quick description of what needs to go, where it is located, and when you want it removed. The more details you provide, the easier it is for us to give you a clear estimate.",
   },
   {
     number: "03",
@@ -78,7 +78,7 @@ const HowItWorks = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">Ready To Get Started?</h2>
             <p className="text-body-lg mb-8">
-              Send us a few details about the job, and if you want, attach a photo so we can get you a free estimate faster.
+              Send us a few details about the job, and we’ll get you a free estimate as soon as possible.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Request a Free Quote

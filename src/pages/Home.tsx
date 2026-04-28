@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Truck, Clock3, Camera, MapPinned, ShieldCheck, Recycle, House, Wrench } from "lucide-react";
+import { Truck, Clock3, MessageSquare, MapPinned, ShieldCheck, Recycle, House, Wrench } from "lucide-react";
 import PageLayout from "@/components/PageLayout";
 import AnimatedSection from "@/components/AnimatedSection";
 import heroImage from "@/assets/junk-removal-hero.jpg";
@@ -9,7 +9,7 @@ import patternBg from "@/assets/pattern-bg.jpg";
 const coreValues = [
   { icon: Truck, title: "Reliable Hauling", description: "We show up ready to load, haul, and clear out junk without wasting your whole day." },
   { icon: Clock3, title: "Fast Response", description: "Same-day availability and quick communication help you get the junk gone when you need it gone." },
-  { icon: Camera, title: "Easy Estimates", description: "Customers can send photos with their quote request to make pricing faster and more accurate." },
+  { icon: MessageSquare, title: "Easy Estimates", description: "Send us a quick description of what you need removed and we’ll get back to you with a clear estimate." },
   { icon: MapPinned, title: "Local Service", description: "We focus on Oakland and Macomb County, so you are working with a crew that actually knows the area." },
 ];
 
@@ -36,7 +36,7 @@ const Home = () => {
               Junk Removal That Is Fast, Straightforward, and Built for Real Cleanouts
             </h1>
             <p className="text-body-lg max-w-3xl mx-auto mb-10">
-              Junk N Dump helps homeowners, renters, landlords, and small contractors clear out unwanted junk across Oakland and Macomb County. We offer free estimates and make it easy to send photos so you can get a quote faster.
+              Junk N Dump helps homeowners, renters, landlords, and small contractors clear out unwanted junk across Oakland and Macomb County. We offer free estimates, same-day availability when possible, and a simple process from first message to final pickup.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <Link to="/services" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
@@ -82,7 +82,7 @@ const Home = () => {
 
           <AnimatedSection delay={0.2}>
             <p className="text-body">
-              Our focus is straightforward service, fair communication, and showing up ready to work. If you want a free estimate, same-day availability when possible, and the option to send a photo of your junk before booking, Junk N Dump is built for exactly that.
+              Our focus is straightforward service, fair communication, and showing up ready to work. If you want a free estimate and same-day availability when possible, Junk N Dump is built for exactly that.
             </p>
           </AnimatedSection>
         </div>
@@ -119,7 +119,7 @@ const Home = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">Need Junk Gone Fast?</h2>
             <p className="text-body-lg mb-8">
-              Send over a few details, attach a photo if you want, and we will get back to you with a free estimate. Same-day service is available when scheduling allows.
+              Send over a few details and we will get back to you with a free estimate. Same-day service is available when scheduling allows.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Request a Free Quote

@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
           <AnimatedSection>
             <h2 className="heading-section mb-6">Get a Free Estimate</h2>
             <p className="text-body-lg mb-8">
-              Tell us what needs to go, upload a photo if you want, and we will help you figure out the next move.
+              Tell us what needs to go, and we will help you figure out the next move.
             </p>
             <Link to="/get-a-quote" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary-dark transition-colors duration-200 shadow-lg">
               Get a Quote
